@@ -1,0 +1,541 @@
+{
+ "actions": [],
+ "creation": "2021-01-01 15:40:43.839629",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "shipment_channel",
+  "job_type",
+  "column_break_2",
+  "company",
+  "shipment_type",
+  "courier_information_section",
+  "courier_name",
+  "port_of_loading_a",
+  "country_d",
+  "column_break_11",
+  "pol_etd_a",
+  "port_of_destination_a",
+  "country_c",
+  "voyage_information_section",
+  "vessel_name",
+  "pol_etd_c",
+  "pol",
+  "country_f",
+  "d_column",
+  "voyage_number",
+  "shipping_line_c",
+  "pod",
+  "country_e",
+  "master_bl_information_q_section",
+  "mbl_q",
+  "bl_agent",
+  "co_loader_c",
+  "q_column",
+  "bl_c_date",
+  "shipment_type_w",
+  "total_number_of_containers",
+  "total_number_of_container_40",
+  "transformation_information_section",
+  "transporter_name_c",
+  "port_of_loading",
+  "country_g",
+  "pol_etd",
+  "a_column",
+  "truck_number_c",
+  "port_of_destination",
+  "country_h",
+  "master_information_z_section",
+  "reference_number_z",
+  "driver_name_z",
+  "column_break_43",
+  "reference_date_z",
+  "driver_contact_number_z",
+  "master_information_section",
+  "reference_number",
+  "b_column",
+  "reference_date",
+  "flight_information_section",
+  "carrirer_name",
+  "airport_of_loading",
+  "country",
+  "airport_of_loading_etd",
+  "column_break_12",
+  "flight_number",
+  "airport_of_destination",
+  "country_a",
+  "master_bl_information_section",
+  "airway_code",
+  "mawb_no",
+  "column_break_19",
+  "bl_date",
+  "total_section",
+  "total_volume",
+  "column_break_62",
+  "total_weight",
+  "total_chargeable_weight_kg",
+  "section_break_71",
+  "container_details",
+  "section_break_59",
+  "shipment_progress_detail",
+  "data_76"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Job Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "shipment_type",
+   "fieldtype": "Select",
+   "label": "BL Type",
+   "options": "Import\nExport"
+  },
+  {
+   "fieldname": "job_type",
+   "fieldtype": "Link",
+   "label": "Job Type",
+   "options": "Job Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "shipment_channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipment Channel",
+   "options": "\nAir\nSea\nLand\nCourier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "remember_last_selected_value": 1
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Courier\"",
+   "fieldname": "courier_information_section",
+   "fieldtype": "Section Break",
+   "label": "Courier Information"
+  },
+  {
+   "fieldname": "courier_name",
+   "fieldtype": "Link",
+   "label": "Courier Name",
+   "options": "Courier"
+  },
+  {
+   "fieldname": "port_of_loading_a",
+   "fieldtype": "Link",
+   "label": "Port Of Loading",
+   "options": "Port"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pol_etd_a",
+   "fieldtype": "Datetime",
+   "label": "Port Of Loading ETD"
+  },
+  {
+   "fieldname": "port_of_destination_a",
+   "fieldtype": "Link",
+   "label": "Port Of Destination",
+   "options": "Port"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\"",
+   "fieldname": "voyage_information_section",
+   "fieldtype": "Section Break",
+   "label": "Voyage Information"
+  },
+  {
+   "fieldname": "vessel_name",
+   "fieldtype": "Link",
+   "label": "Vessel Name",
+   "options": "Vessel"
+  },
+  {
+   "fieldname": "pol_etd_c",
+   "fieldtype": "Datetime",
+   "label": "Port Of Loading ETD"
+  },
+  {
+   "fieldname": "pol",
+   "fieldtype": "Link",
+   "label": "Port Of Loading",
+   "options": "Port"
+  },
+  {
+   "fieldname": "d_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "voyage_number",
+   "fieldtype": "Data",
+   "label": "Voyage Number"
+  },
+  {
+   "fieldname": "shipping_line_c",
+   "fieldtype": "Link",
+   "label": "Shipping Line",
+   "options": "Shipping Line"
+  },
+  {
+   "fieldname": "pod",
+   "fieldtype": "Link",
+   "label": "Port Of Destination",
+   "options": "Port"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\"",
+   "fieldname": "master_bl_information_q_section",
+   "fieldtype": "Section Break",
+   "label": "Master B/L Information"
+  },
+  {
+   "fieldname": "mbl_q",
+   "fieldtype": "Data",
+   "label": "MB/L"
+  },
+  {
+   "fieldname": "bl_agent",
+   "fieldtype": "Link",
+   "label": "B/L Agent",
+   "options": "Agent"
+  },
+  {
+   "fieldname": "co_loader_c",
+   "fieldtype": "Link",
+   "label": "Co Loader",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "q_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "bl_c_date",
+   "fieldtype": "Date",
+   "label": "B/L  Date"
+  },
+  {
+   "fieldname": "shipment_type_w",
+   "fieldtype": "Link",
+   "label": "Shipment Type",
+   "options": "Shipment Type"
+  },
+  {
+   "fieldname": "total_number_of_containers",
+   "fieldtype": "Data",
+   "label": "Total Number Of Container 20",
+   "mandatory_depends_on": "eval:doc.shipment_type_w==\"FCL/LCL\" || doc.shipment_type_w==\"FCL/FCL\""
+  },
+  {
+   "fieldname": "total_number_of_container_40",
+   "fieldtype": "Data",
+   "label": "Total Number Of Container 40",
+   "mandatory_depends_on": "eval:doc.shipment_type_w==\"FCL/LCL\" || doc.shipment_type_w==\"FCL/FCL\""
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Land\"",
+   "fieldname": "transformation_information_section",
+   "fieldtype": "Section Break",
+   "label": "Transportation Information"
+  },
+  {
+   "fieldname": "transporter_name_c",
+   "fieldtype": "Link",
+   "label": "Transporter Name",
+   "options": "Transporter"
+  },
+  {
+   "fieldname": "pol_etd",
+   "fieldtype": "Datetime",
+   "label": "Port of Loading ETD"
+  },
+  {
+   "fieldname": "port_of_loading",
+   "fieldtype": "Link",
+   "label": "Port Of Loading",
+   "options": "Port"
+  },
+  {
+   "fieldname": "a_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "truck_number_c",
+   "fieldtype": "Data",
+   "label": "Truck Number"
+  },
+  {
+   "fieldname": "port_of_destination",
+   "fieldtype": "Link",
+   "label": "Port Of Destination",
+   "options": "Port"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Courier\"",
+   "fieldname": "master_information_section",
+   "fieldtype": "Section Break",
+   "label": "Master Information"
+  },
+  {
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "fieldname": "b_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_date",
+   "fieldtype": "Date",
+   "label": "Reference Date"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Air\"",
+   "fieldname": "flight_information_section",
+   "fieldtype": "Section Break",
+   "label": "Flight Information"
+  },
+  {
+   "fieldname": "carrirer_name",
+   "fieldtype": "Link",
+   "label": "Carrier Name",
+   "options": "Airway Codes"
+  },
+  {
+   "fieldname": "airport_of_loading_etd",
+   "fieldtype": "Datetime",
+   "label": "Airport Of Loading ETD"
+  },
+  {
+   "fieldname": "airport_of_loading",
+   "fieldtype": "Link",
+   "label": "Airport Of Loading",
+   "options": "Airport"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flight_number",
+   "fieldtype": "Data",
+   "label": "Flight Number"
+  },
+  {
+   "fieldname": "airport_of_destination",
+   "fieldtype": "Link",
+   "label": "Airport Of Destination",
+   "options": "Airport"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Air\"",
+   "fieldname": "master_bl_information_section",
+   "fieldtype": "Section Break",
+   "label": "Master B/L Information"
+  },
+  {
+   "fetch_from": "carrirer_name.airline_code",
+   "fieldname": "airway_code",
+   "fieldtype": "Data",
+   "label": "Airway Code",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mawb_no",
+   "fieldtype": "Data",
+   "label": "MAWB No."
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bl_date",
+   "fieldtype": "Date",
+   "label": "B/L Date"
+  },
+  {
+   "fieldname": "total_volume",
+   "fieldtype": "Float",
+   "label": "Total Volume ",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Air\"",
+   "fieldname": "total_chargeable_weight_kg",
+   "fieldtype": "Float",
+   "label": "Total Chargeable Weight (KG)",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\"",
+   "fieldname": "section_break_71",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "container_details",
+   "fieldtype": "Table",
+   "label": "Container Details",
+   "options": "Container Details"
+  },
+  {
+   "fieldname": "section_break_59",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipment_progress_detail",
+   "fieldtype": "Table",
+   "label": "Shipment Progress Detail",
+   "options": "Shipment Progress"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Land\"",
+   "fieldname": "master_information_z_section",
+   "fieldtype": "Section Break",
+   "label": "Master Information"
+  },
+  {
+   "fieldname": "reference_number_z",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "fieldname": "driver_name_z",
+   "fieldtype": "Data",
+   "label": "Driver Name"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "reference_date_z",
+   "fieldtype": "Date",
+   "label": "Reference Date"
+  },
+  {
+   "fieldname": "driver_contact_number_z",
+   "fieldtype": "Data",
+   "label": "Driver Contact Number"
+  },
+  {
+   "fieldname": "total_section",
+   "fieldtype": "Section Break",
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_weight",
+   "fieldtype": "Float",
+   "label": "Total Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "airport_of_loading.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "airport_of_destination.country",
+   "fieldname": "country_a",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "port_of_loading_a.country",
+   "fieldname": "country_d",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "port_of_destination_a.country",
+   "fieldname": "country_c",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pol.country",
+   "fieldname": "country_f",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "pod.country",
+   "fieldname": "country_e",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "port_of_loading.country",
+   "fieldname": "country_g",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "port_of_destination.country",
+   "fieldname": "country_h",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fieldname": "data_76",
+   "fieldtype": "Data"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-03-24 11:02:30.033503",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Shipment Job Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

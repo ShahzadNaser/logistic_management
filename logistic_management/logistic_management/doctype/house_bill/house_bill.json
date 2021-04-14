@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "autoname": "HBL-.YYYY.-.####",
+ "creation": "2020-12-04 14:00:27.326884",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_2",
+  "shipment",
+  "shipment_channel",
+  "column_break_3",
+  "hawb",
+  "house_bl",
+  "reference_number",
+  "house_waybill_number",
+  "section_break_3",
+  "origin_port",
+  "country",
+  "pod_eta",
+  "shipper_c",
+  "consignee_c",
+  "notify_c",
+  "description_c",
+  "column_break_11",
+  "agent",
+  "final_destination_port_c",
+  "country_c",
+  "incoterms",
+  "customer_reference_no",
+  "bayan_number",
+  "remarksnotes",
+  "section_a_section",
+  "sea_cargo_details",
+  "section_section",
+  "cargo_details",
+  "section_break_31",
+  "total_volume",
+  "total_qty",
+  "column_break_29",
+  "total_actual_weight",
+  "total_chargeable_weight",
+  "section_break_32",
+  "shipment_progress"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "shipment",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Shipment Job Master Number",
+   "options": "Shipment Job Master",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fetch_from": "shipment.shipment_channel",
+   "fieldname": "shipment_channel",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Shipment Channel",
+   "options": "Air\nSea\nLand\nCourier",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Air\"",
+   "fetch_from": "shipment.mawb_no",
+   "fetch_if_empty": 1,
+   "fieldname": "hawb",
+   "fieldtype": "Data",
+   "label": "HAWB"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\"",
+   "fetch_from": "shipment.mbl_q",
+   "fieldname": "house_bl",
+   "fieldtype": "Data",
+   "label": "House B/L"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Land\"",
+   "fetch_from": "shipment.reference_number_z",
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Courier\"",
+   "fetch_from": "shipment.reference_number",
+   "fieldname": "house_waybill_number",
+   "fieldtype": "Data",
+   "label": "House Reference Number"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\" || doc.shipment_channel==\"Air\"\n||doc.shipment_channel==\"Land\" || doc.shipment_channel==\"Courier\"",
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "origin_port",
+   "fieldtype": "Link",
+   "label": "Origin Port",
+   "options": "Port"
+  },
+  {
+   "fieldname": "pod_eta",
+   "fieldtype": "Datetime",
+   "label": "Port of Destination ETA"
+  },
+  {
+   "fieldname": "shipper_c",
+   "fieldtype": "Link",
+   "label": "Shipper",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "consignee_c",
+   "fieldtype": "Link",
+   "label": "Consignee",
+   "options": "Customer"
+  },
+  {
+   "fetch_from": "consignee_c.customer_name",
+   "fieldname": "notify_c",
+   "fieldtype": "Link",
+   "label": "Notify",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "description_c",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agent",
+   "fieldtype": "Link",
+   "label": "Agent",
+   "options": "Customer"
+  },
+  {
+   "fieldname": "final_destination_port_c",
+   "fieldtype": "Link",
+   "label": "Final Destination Port",
+   "options": "Port"
+  },
+  {
+   "fieldname": "incoterms",
+   "fieldtype": "Select",
+   "label": "Incoterms",
+   "options": "Prepaid\nCollect"
+  },
+  {
+   "fieldname": "customer_reference_no",
+   "fieldtype": "Data",
+   "label": "Customer Reference No"
+  },
+  {
+   "fieldname": "bayan_number",
+   "fieldtype": "Data",
+   "label": "Bayan Number"
+  },
+  {
+   "fieldname": "remarksnotes",
+   "fieldtype": "Small Text",
+   "label": "Remarks/Notes"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Sea\"",
+   "fieldname": "section_a_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel==\"Air\" ||  doc.shipment_channel==\"Land\" ||  doc.shipment_channel==\"Courier\"",
+   "fieldname": "section_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cargo_details",
+   "fieldtype": "Table",
+   "label": "Cargo Details",
+   "options": "Cargo Details"
+  },
+  {
+   "fieldname": "section_break_31",
+   "fieldtype": "Section Break",
+   "label": "Totals"
+  },
+  {
+   "fieldname": "shipment_progress",
+   "fieldtype": "Table",
+   "label": "Shipment Progress",
+   "options": "Shipment Progress"
+  },
+  {
+   "fieldname": "sea_cargo_details",
+   "fieldtype": "Table",
+   "label": "Sea Cargo Details",
+   "options": "Sea Cargo Details"
+  },
+  {
+   "fieldname": "total_volume",
+   "fieldtype": "Float",
+   "label": "Total Volume",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_actual_weight",
+   "fieldtype": "Float",
+   "label": "Total Actual Weight",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.shipment_channel == \"Air\"",
+   "fieldname": "total_chargeable_weight",
+   "fieldtype": "Float",
+   "label": "Total Chargeable Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "origin_port.country",
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "final_destination_port_c.country",
+   "fieldname": "country_c",
+   "fieldtype": "Data",
+   "label": "Country",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Quantity",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-04-04 11:20:49.621953",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "House Bill",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

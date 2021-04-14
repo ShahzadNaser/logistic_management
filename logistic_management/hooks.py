@@ -15,6 +15,8 @@ app_license = "MIT"
 # ------------------
 
 # include js, css files in header of desk.html
+
+app_logo_url = "/files/Logo.png"
 # app_include_css = "/assets/logistic_management/css/logistic_management.css"
 # app_include_js = "/assets/logistic_management/js/logistic_management.js"
 
@@ -34,9 +36,14 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {"Quotation":"custom_scripts/quotation.js",
+"Sales Order":"custom_scripts/sales_order.js",
+"Sales Invoice":"custom_scripts/sales_invoice.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
+
+fixtures = [{"dt":"Desk Page", "filters": [["name", "=", "Logistic Management"]]},{"dt":"Custom Field", "filters": [["dt", "in", ["Sales Invoice","Delivery Note","Address","Lead","Sales Order","Quotation","Issue","Customer","Purchase Invoice","Purchase Order","Purchase Reciept","Item"]]]},"Property Setter",{"dt":"Print Format", "filters": [["name", "in", ["Air INV","Sea INV","Land INV","Delivery Proof AIR","Delivery Proof Sea"]]]},"Letter Head"]
 
 # Home Pages
 # ----------

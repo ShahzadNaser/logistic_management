@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "creation": "2021-02-09 11:43:50.598898",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "holiday_pay",
+  "absent_deduction",
+  "overtime_pay",
+  "bonus_pay"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "holiday_pay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Holiday Pay"
+  },
+  {
+   "fieldname": "absent_deduction",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Absent Deduction"
+  },
+  {
+   "fieldname": "overtime_pay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Overtime Pay"
+  },
+  {
+   "fieldname": "bonus_pay",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Bonus Pay"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-02-09 11:49:52.835389",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Employee Extra Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
