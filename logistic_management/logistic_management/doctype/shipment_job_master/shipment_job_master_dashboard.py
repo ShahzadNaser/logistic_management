@@ -12,10 +12,10 @@ def get_data():
 			# 	'items': ['Task', 'Expense Claim', 'Issue']
 			# },
 			
-			{
-				'label': _('Sales'),
-				'items': ['Sales Order']
-			},
+			# {
+			# 	'label': _('Sales'),
+			# 	'items': ['Sales Order']
+			# },
 			# {
 			# 	'label': _('Purchase'),
 			# 	'items': ['Purchase Order', 'Purchase Invoice']
