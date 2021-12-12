@@ -9,7 +9,11 @@ frappe.ui.form.on('Sales Invoice', {
      }   else if(frm.doc.branch == "Shipping Dammam" || frm.doc.branch == "Shipping Jeddah"){
         frm.set_value("naming_series","SH.YY.-")
         frm.refresh_field("naming_series")
-     }  
+     }else if(frm.doc.branch == "Bunker Jeddah"){
+        frm.set_value("naming_series","JB.YY.-")
+        frm.refresh_field("naming_series")
+	 }
+
     },
 	house_bill:function(frm) {
 	    frappe.db.get_value("Shipment Job Master",frm.doc.job_no_c,"shipment_type").then((res)=>{
