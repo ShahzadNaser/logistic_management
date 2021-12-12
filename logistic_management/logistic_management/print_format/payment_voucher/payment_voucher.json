@@ -1,0 +1,23 @@
+{
+ "align_labels_right": 0,
+ "creation": "2021-06-02 09:43:13.443891",
+ "custom_format": 0,
+ "disabled": 0,
+ "doc_type": "Payment Entry",
+ "docstatus": 0,
+ "doctype": "Print Format",
+ "font": "Default",
+ "format_data": "[{\"fieldname\": \"print_heading_template\", \"fieldtype\": \"Custom HTML\", \"options\": \"<div class=\\\"print-heading\\\">\\t\\t\\t\\t<h2>Payment Receipt<br><small>{{ doc.name }}</small>\\t\\t\\t\\t</h2></div>\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Type of Payment\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"mode_of_payment\", \"print_hide\": 0, \"label\": \"Mode of Payment\"}, {\"fieldname\": \"posting_date\", \"print_hide\": 0, \"label\": \"Posting Date\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldtype\": \"Section Break\", \"label\": \"Payment From / To\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"party\", \"print_hide\": 0, \"label\": \"Party\"}, {\"fieldname\": \"party_name\", \"print_hide\": 0, \"label\": \"Party Name\"}, {\"fieldname\": \"paid_amount\", \"print_hide\": 0, \"label\": \"Paid Amount\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"bank_account\", \"print_hide\": 0, \"label\": \"Company Bank Account\"}, {\"fieldname\": \"party_bank_account\", \"print_hide\": 0, \"label\": \"Party Bank Account\"}, {\"fieldname\": \"contact_person\", \"print_hide\": 0, \"label\": \"Contact\"}, {\"fieldname\": \"contact_email\", \"print_hide\": 0, \"label\": \"Email\"}, {\"fieldtype\": \"Section Break\", \"label\": \"\"}, {\"fieldtype\": \"Column Break\"}, {\"fieldname\": \"references\", \"print_hide\": 0, \"label\": \"Payment References\", \"visible_columns\": [{\"fieldname\": \"reference_doctype\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"reference_name\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"job_no\", \"print_width\": \"\", \"print_hide\": 0}, {\"fieldname\": \"allocated_amount\", \"print_width\": \"\", \"print_hide\": 0}]}]",
+ "idx": 0,
+ "line_breaks": 0,
+ "modified": "2021-06-08 14:30:21.566551",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Payment Voucher",
+ "owner": "Administrator",
+ "print_format_builder": 1,
+ "print_format_type": "Jinja",
+ "raw_printing": 0,
+ "show_section_headings": 0,
+ "standard": "Yes"
+}

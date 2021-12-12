@@ -1,0 +1,34 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2021-05-03 14:56:31.336821",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "json": "{\"filters\":[[\"Sales Invoice\",\"posting_date\",\"Between\",[\"2021-04-01\",\"2021-04-30\"],false],[\"Sales Invoice\",\"docstatus\",\"!=\",\"2\",false],[\"Sales Invoice\",\"docstatus\",\"!=\",\"0\",false],[\"Sales Invoice\",\"company\",\"=\",\"Saudi Shipping & Maritime Services Co. Ltd.\"]],\"fields\":[[\"name\",\"Sales Invoice\"],[\"job_no_c\",\"Sales Invoice\"],[\"posting_date\",\"Sales Invoice\"],[\"base_total\",\"Sales Invoice\"],[\"base_total_taxes_and_charges\",\"Sales Invoice\"],[\"grand_total\",\"Sales Invoice\"],[\"status\",\"Sales Invoice\"],[\"customer_name\",\"Sales Invoice\"],[\"currency\",\"Sales Invoice\"]],\"order_by\":\"`tabSales Invoice`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"job_no_c\":120,\"posting_date\":120,\"base_total\":120,\"base_total_taxes_and_charges\":120,\"grand_total\":120,\"status\":120,\"customer_name\":120,\"currency\":120},\"group_by\":null}",
+ "letter_head": "Logistic",
+ "modified": "2021-07-13 12:30:29.195424",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Issued Sales Invoice Report Listings",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Sales Invoice",
+ "report_name": "Issued Sales Invoice Report Listings",
+ "report_type": "Report Builder",
+ "roles": [
+  {
+   "role": "Accounts User"
+  },
+  {
+   "role": "Accounts Manager"
+  },
+  {
+   "role": "Shipment Manager"
+  }
+ ]
+}
