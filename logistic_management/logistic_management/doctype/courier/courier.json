@@ -1,27 +1,27 @@
 {
  "actions": [],
- "autoname": "field:shipping_line",
- "creation": "2020-12-31 09:54:34.408226",
+ "autoname": "field:courier_name",
+ "creation": "2021-01-01 11:45:22.849176",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "shipping_line"
+  "courier_name"
  ],
  "fields": [
   {
-   "fieldname": "shipping_line",
+   "fieldname": "courier_name",
    "fieldtype": "Data",
-   "label": "Shipping Line",
+   "label": "Courier Name",
    "unique": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-12 21:22:30.895823",
+ "modified": "2021-12-12 21:22:33.242348",
  "modified_by": "Administrator",
  "module": "Logistic Management",
- "name": "Shipping Line",
+ "name": "Courier",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +40,5 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "shipping_line",
  "track_changes": 1
 }

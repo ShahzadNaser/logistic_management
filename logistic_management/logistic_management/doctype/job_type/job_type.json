@@ -1,27 +1,44 @@
 {
  "actions": [],
- "autoname": "field:shipping_line",
- "creation": "2020-12-31 09:54:34.408226",
+ "autoname": "field:job_type",
+ "creation": "2020-12-16 12:16:00.900323",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "shipping_line"
+  "job_type",
+  "job_type_description",
+  "column_break_3",
+  "series"
  ],
  "fields": [
   {
-   "fieldname": "shipping_line",
+   "fieldname": "job_type",
    "fieldtype": "Data",
-   "label": "Shipping Line",
+   "label": "Job Type",
    "unique": 1
+  },
+  {
+   "fieldname": "job_type_description",
+   "fieldtype": "Small Text",
+   "label": "Job Type Description"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "series",
+   "fieldtype": "Data",
+   "label": "Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-12 21:22:30.895823",
+ "modified": "2021-12-12 21:22:31.079160",
  "modified_by": "Administrator",
  "module": "Logistic Management",
- "name": "Shipping Line",
+ "name": "Job Type",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +57,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "shipping_line",
+ "title_field": "job_type",
  "track_changes": 1
 }

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2020-12-16 15:40:59.513542",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cargo_description",
+  "quantity",
+  "uom",
+  "column_break_4",
+  "volume",
+  "weight",
+  "chargable_weight"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "cargo_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cargo Description"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume"
+  },
+  {
+   "columns": 2,
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Actual Weight"
+  },
+  {
+   "columns": 2,
+   "fieldname": "chargable_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Chargable Weight"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-12-12 21:22:29.690346",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Cargo Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

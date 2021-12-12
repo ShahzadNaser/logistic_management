@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "autoname": "field:iso_code",
+ "creation": "2020-12-08 11:38:45.859946",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "iso_code",
+  "code_type",
+  "size",
+  "column_break_4",
+  "container_name",
+  "target_weight",
+  "category"
+ ],
+ "fields": [
+  {
+   "fieldname": "iso_code",
+   "fieldtype": "Data",
+   "label": "ISO Code",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "code_type",
+   "fieldtype": "Data",
+   "label": "Type Code"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "container_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type Description",
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "target_weight",
+   "fieldtype": "Data",
+   "label": "Target Weight"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "category",
+   "fieldtype": "Link",
+   "label": "Category",
+   "options": "Container Category"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-12 21:22:32.852068",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Container Type",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "code_type,size,category,container_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

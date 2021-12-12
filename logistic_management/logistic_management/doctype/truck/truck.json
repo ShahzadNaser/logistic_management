@@ -1,27 +1,33 @@
 {
  "actions": [],
- "autoname": "field:shipping_line",
- "creation": "2020-12-31 09:54:34.408226",
+ "autoname": "field:truck_name",
+ "creation": "2020-11-23 11:48:35.289630",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "shipping_line"
+  "truck_name",
+  "truck_description"
  ],
  "fields": [
   {
-   "fieldname": "shipping_line",
+   "fieldname": "truck_name",
    "fieldtype": "Data",
-   "label": "Shipping Line",
+   "label": "Truck Name",
    "unique": 1
+  },
+  {
+   "fieldname": "truck_description",
+   "fieldtype": "Data",
+   "label": "Truck Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-12 21:22:30.895823",
+ "modified": "2021-12-12 21:22:31.280290",
  "modified_by": "Administrator",
  "module": "Logistic Management",
- "name": "Shipping Line",
+ "name": "Truck",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +46,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "shipping_line",
+ "title_field": "truck_name",
  "track_changes": 1
 }

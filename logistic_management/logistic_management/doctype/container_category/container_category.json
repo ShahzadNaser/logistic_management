@@ -1,27 +1,33 @@
 {
  "actions": [],
- "autoname": "field:shipping_line",
- "creation": "2020-12-31 09:54:34.408226",
+ "autoname": "field:category_name",
+ "creation": "2021-01-06 13:12:17.123849",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "shipping_line"
+  "category_name",
+  "category_description"
  ],
  "fields": [
   {
-   "fieldname": "shipping_line",
+   "fieldname": "category_name",
    "fieldtype": "Data",
-   "label": "Shipping Line",
+   "label": "Category Name",
    "unique": 1
+  },
+  {
+   "fieldname": "category_description",
+   "fieldtype": "Data",
+   "label": "Category Description"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-12 21:22:30.895823",
+ "modified": "2021-12-12 21:22:31.462538",
  "modified_by": "Administrator",
  "module": "Logistic Management",
- "name": "Shipping Line",
+ "name": "Container Category",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +46,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "shipping_line",
+ "title_field": "category_name",
  "track_changes": 1
 }

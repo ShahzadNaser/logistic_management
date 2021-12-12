@@ -1,27 +1,41 @@
 {
  "actions": [],
- "autoname": "field:shipping_line",
- "creation": "2020-12-31 09:54:34.408226",
+ "autoname": "field:carrier",
+ "creation": "2020-11-23 11:42:02.175398",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "shipping_line"
+  "carrier",
+  "carrier_code",
+  "airline_code"
  ],
  "fields": [
   {
-   "fieldname": "shipping_line",
+   "fieldname": "carrier",
    "fieldtype": "Data",
-   "label": "Shipping Line",
+   "label": "Carrier",
    "unique": 1
+  },
+  {
+   "fieldname": "carrier_code",
+   "fieldtype": "Data",
+   "label": "Carrier Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "airline_code",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Airline Code"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2021-12-12 21:22:30.895823",
+ "modified": "2021-12-12 21:22:32.274181",
  "modified_by": "Administrator",
  "module": "Logistic Management",
- "name": "Shipping Line",
+ "name": "Airway Codes",
  "owner": "Administrator",
  "permissions": [
   {
@@ -40,6 +54,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "shipping_line",
+ "title_field": "carrier",
  "track_changes": 1
 }
