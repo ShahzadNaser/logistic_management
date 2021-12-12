@@ -1,6 +1,397 @@
 [
  {
   "default_value": null,
+  "doc_type": "Packed Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "rate",
+  "modified": "2021-12-12 22:47:47.725426",
+  "name": "Packed Item-rate-read_only",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "read_only",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Quotation",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:48.469698",
+  "name": "Quotation-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Order",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:48.605282",
+  "name": "Sales Order-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:48.722020",
+  "name": "Sales Invoice-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Delivery Note",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:48.850483",
+  "name": "Delivery Note-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Supplier Quotation",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:48.988490",
+  "name": "Supplier Quotation-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Order",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:49.113822",
+  "name": "Purchase Order-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:49.257941",
+  "name": "Purchase Invoice-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "base_rounded_total",
+  "modified": "2021-12-12 22:47:49.287349",
+  "name": "Purchase Receipt-base_rounded_total-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "base_rounded_total",
+  "modified": "2021-12-12 22:47:49.314816",
+  "name": "Purchase Receipt-base_rounded_total-print_hide",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "print_hide",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "rounded_total",
+  "modified": "2021-12-12 22:47:49.342480",
+  "name": "Purchase Receipt-rounded_total-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "rounded_total",
+  "modified": "2021-12-12 22:47:49.370737",
+  "name": "Purchase Receipt-rounded_total-print_hide",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "print_hide",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Receipt",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "disable_rounded_total",
+  "modified": "2021-12-12 22:47:49.399768",
+  "name": "Purchase Receipt-disable_rounded_total-default",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "default",
+  "property_type": "Text",
+  "row_name": null,
+  "value": "0"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "target_warehouse",
+  "modified": "2021-12-12 22:47:54.790983",
+  "name": "Sales Invoice Item-target_warehouse-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "discount_account",
+  "modified": "2021-12-12 23:15:56.522366",
+  "name": "Sales Invoice Item-discount_account-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "discount_account",
+  "modified": "2021-12-12 23:15:56.539258",
+  "name": "Sales Invoice Item-discount_account-mandatory_depends_on",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "mandatory_depends_on",
+  "property_type": "Code",
+  "row_name": null,
+  "value": ""
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Invoice Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "discount_account",
+  "modified": "2021-12-12 23:15:56.557631",
+  "name": "Purchase Invoice Item-discount_account-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Invoice Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "discount_account",
+  "modified": "2021-12-12 23:15:56.574689",
+  "name": "Purchase Invoice Item-discount_account-mandatory_depends_on",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "mandatory_depends_on",
+  "property_type": "Code",
+  "row_name": null,
+  "value": ""
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "additional_discount_account",
+  "modified": "2021-12-12 23:15:56.593846",
+  "name": "Sales Invoice-additional_discount_account-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Sales Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "additional_discount_account",
+  "modified": "2021-12-12 23:15:56.609224",
+  "name": "Sales Invoice-additional_discount_account-mandatory_depends_on",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "mandatory_depends_on",
+  "property_type": "Code",
+  "row_name": null,
+  "value": ""
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "additional_discount_account",
+  "modified": "2021-12-12 23:15:56.624796",
+  "name": "Purchase Invoice-additional_discount_account-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Purchase Invoice",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "additional_discount_account",
+  "modified": "2021-12-12 23:15:56.640801",
+  "name": "Purchase Invoice-additional_discount_account-mandatory_depends_on",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "mandatory_depends_on",
+  "property_type": "Code",
+  "row_name": null,
+  "value": ""
+ },
+ {
+  "default_value": null,
+  "doc_type": "Item",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "default_discount_account",
+  "modified": "2021-12-12 23:15:56.661003",
+  "name": "Item-default_discount_account-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
   "doc_type": "Sales Invoice Item",
   "docstatus": 0,
   "doctype": "Property Setter",
@@ -13,6 +404,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -29,6 +421,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -45,6 +438,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -61,6 +455,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -77,6 +472,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -93,6 +489,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -109,6 +506,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -125,6 +523,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -141,6 +540,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -157,6 +557,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -173,6 +574,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -189,6 +591,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -205,6 +608,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -221,6 +625,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -237,6 +642,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -253,6 +659,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -269,6 +676,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -285,6 +693,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -301,6 +710,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -317,6 +727,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -333,6 +744,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -349,6 +761,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -365,6 +778,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -381,6 +795,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -397,6 +812,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -413,6 +829,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -429,6 +846,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -445,6 +863,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -461,6 +880,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -477,6 +897,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -493,6 +914,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -509,6 +931,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -525,6 +948,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -541,6 +965,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -557,6 +982,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -573,6 +999,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -589,6 +1016,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -605,6 +1033,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -621,6 +1050,7 @@
   "parenttype": null,
   "property": "fetch_from",
   "property_type": "Small Text",
+  "row_name": null,
   "value": "house_bill.customer_reference_no"
  },
  {
@@ -637,6 +1067,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -653,6 +1084,7 @@
   "parenttype": null,
   "property": "columns",
   "property_type": "Int",
+  "row_name": null,
   "value": "2"
  },
  {
@@ -669,6 +1101,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -685,6 +1118,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -701,6 +1135,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -717,6 +1152,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -733,6 +1169,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -749,6 +1186,7 @@
   "parenttype": null,
   "property": "columns",
   "property_type": "Int",
+  "row_name": null,
   "value": "2"
  },
  {
@@ -765,6 +1203,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -781,6 +1220,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -797,6 +1237,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -813,6 +1254,7 @@
   "parenttype": null,
   "property": "label",
   "property_type": "Data",
+  "row_name": null,
   "value": "VAT "
  },
  {
@@ -829,6 +1271,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -845,6 +1288,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -861,6 +1305,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -877,6 +1322,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -893,6 +1339,7 @@
   "parenttype": null,
   "property": "reqd",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -909,6 +1356,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -925,6 +1373,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -941,6 +1390,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -957,6 +1407,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -973,6 +1424,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -989,6 +1441,7 @@
   "parenttype": null,
   "property": "label",
   "property_type": "Data",
+  "row_name": null,
   "value": "Item VAT"
  },
  {
@@ -1005,6 +1458,7 @@
   "parenttype": null,
   "property": "default_print_format",
   "property_type": "Data",
+  "row_name": null,
   "value": "Sea INV"
  },
  {
@@ -1021,6 +1475,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1037,6 +1492,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1053,6 +1509,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1069,6 +1526,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1085,6 +1543,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1101,6 +1560,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1117,6 +1577,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1133,6 +1594,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1149,6 +1611,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1165,6 +1628,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1181,6 +1645,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1197,6 +1662,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1213,6 +1679,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1229,6 +1696,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1245,6 +1713,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1261,6 +1730,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1277,6 +1747,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1293,6 +1764,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1309,6 +1781,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1325,6 +1798,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1341,6 +1815,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1357,6 +1832,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1373,6 +1849,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1389,6 +1866,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1405,6 +1883,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1421,6 +1900,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1437,6 +1917,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1453,6 +1934,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1469,6 +1951,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1485,6 +1968,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1501,6 +1985,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1517,6 +2002,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1533,6 +2019,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1549,6 +2036,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1565,6 +2053,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1581,6 +2070,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1597,6 +2087,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1613,6 +2104,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1629,6 +2121,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1645,6 +2138,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1661,6 +2155,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1677,6 +2172,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1693,6 +2189,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1709,6 +2206,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1725,6 +2223,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1741,6 +2240,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1757,6 +2257,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1773,6 +2274,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1789,6 +2291,7 @@
   "parenttype": null,
   "property": "hidden",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1805,6 +2308,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1821,6 +2325,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1837,6 +2342,7 @@
   "parenttype": null,
   "property": "label",
   "property_type": "Data",
+  "row_name": null,
   "value": "VAT"
  },
  {
@@ -1853,6 +2359,7 @@
   "parenttype": null,
   "property": "columns",
   "property_type": "Int",
+  "row_name": null,
   "value": "2"
  },
  {
@@ -1869,6 +2376,7 @@
   "parenttype": null,
   "property": "columns",
   "property_type": "Int",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1885,6 +2393,7 @@
   "parenttype": null,
   "property": "columns",
   "property_type": "Int",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1901,6 +2410,7 @@
   "parenttype": null,
   "property": "in_list_view",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1917,6 +2427,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1933,6 +2444,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1949,6 +2461,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1965,6 +2478,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -1981,6 +2495,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -1997,6 +2512,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -2013,6 +2529,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "0"
  },
  {
@@ -2029,6 +2546,7 @@
   "parenttype": null,
   "property": "print_hide",
   "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -2045,6 +2563,24 @@
   "parenttype": null,
   "property": "read_only",
   "property_type": "Check",
+  "row_name": null,
+  "value": "1"
+ },
+ {
+  "default_value": null,
+  "doc_type": "Address",
+  "docstatus": 0,
+  "doctype": "Property Setter",
+  "doctype_or_field": "DocField",
+  "field_name": "county",
+  "modified": "2021-12-12 23:34:14.092465",
+  "name": "Address-county-hidden",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "property": "hidden",
+  "property_type": "Check",
+  "row_name": null,
   "value": "1"
  },
  {
@@ -2054,13 +2590,14 @@
   "doctype": "Property Setter",
   "doctype_or_field": "DocField",
   "field_name": "naming_series",
-  "modified": "2021-04-14 12:45:07.304032",
+  "modified": "2021-12-12 23:50:24.752561",
   "name": "Sales Invoice-naming_series-options",
   "parent": null,
   "parentfield": null,
   "parenttype": null,
   "property": "options",
   "property_type": "Text",
-  "value": "DL.YY.-\nJL.YY.-\nACC-SINV-RET-.YYYY.-"
+  "row_name": null,
+  "value": "DL.YY.-\nJL.YY.-\nJB.YY.-\nACC-SINV-RET-.YYYY.-"
  }
 ]

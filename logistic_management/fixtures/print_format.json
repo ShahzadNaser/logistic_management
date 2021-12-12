@@ -1,5 +1,6 @@
 [
  {
+  "absolute_value": 0,
   "align_labels_right": 0,
   "css": null,
   "custom_format": 1,
@@ -26,6 +27,7 @@
   "standard": "No"
  },
  {
+  "absolute_value": 0,
   "align_labels_right": 0,
   "css": null,
   "custom_format": 1,
@@ -52,6 +54,7 @@
   "standard": "No"
  },
  {
+  "absolute_value": 0,
   "align_labels_right": 0,
   "css": null,
   "custom_format": 1,
@@ -78,6 +81,7 @@
   "standard": "Yes"
  },
  {
+  "absolute_value": 0,
   "align_labels_right": 0,
   "css": null,
   "custom_format": 1,
@@ -104,6 +108,7 @@
   "standard": "No"
  },
  {
+  "absolute_value": 0,
   "align_labels_right": 0,
   "css": null,
   "custom_format": 1,
