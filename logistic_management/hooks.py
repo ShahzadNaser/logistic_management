@@ -43,7 +43,7 @@ doctype_js = {"Quotation":"custom_scripts/quotation.js",
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-fixtures = [{"dt":"Desk Page", "filters": [["name", "=", "Logistic Management"]]},{"dt":"Custom Field", "filters": [["dt", "in", ["Sales Invoice","Delivery Note","Address","Lead","Sales Order","Quotation","Issue","Customer","Purchase Invoice","Purchase Order","Purchase Reciept","Item"]]]},"Property Setter",{"dt":"Print Format", "filters": [["name", "in", ["Air INV","Sea INV","Land INV","Delivery Proof AIR","Delivery Proof Sea"]]]},"Letter Head"]
+fixtures = [{"dt":"Custom Field", "filters": [["dt", "in", ["Sales Invoice","Delivery Note","Address","Lead","Sales Order","Quotation","Issue","Customer","Purchase Invoice","Purchase Order","Purchase Reciept","Item"]]]},"Property Setter",{"dt":"Print Format", "filters": [["name", "in", ["Air INV","Sea INV","Land INV","Delivery Proof AIR","Delivery Proof Sea"]]]},"Letter Head"]
 
 # Home Pages
 # ----------
@@ -105,7 +105,11 @@ fixtures = [{"dt":"Desk Page", "filters": [["name", "=", "Logistic Management"]]
 # 		"on_trash": "method"
 #	}
 # }
-
+doc_events = {
+	"Sales Order": {
+		"validate": "logistic_management.events.sales_order.validate",
+	}
+}
 # Scheduled Tasks
 # ---------------
 
