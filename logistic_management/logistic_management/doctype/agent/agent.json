@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "autoname": "field:contact_name",
+ "creation": "2020-12-30 21:16:24.024029",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contact_name",
+  "address_1",
+  "address_2",
+  "mobile_no_1",
+  "mobile_no_2",
+  "fax_no_1",
+  "fax_no_2",
+  "telex",
+  "cable",
+  "contact_person"
+ ],
+ "fields": [
+  {
+   "fieldname": "contact_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "address_1",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "mobile_no_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No 1"
+  },
+  {
+   "fieldname": "mobile_no_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mobile No 2"
+  },
+  {
+   "fieldname": "fax_no_1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fax No 1"
+  },
+  {
+   "fieldname": "fax_no_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fax No 2"
+  },
+  {
+   "fieldname": "telex",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Telex"
+  },
+  {
+   "fieldname": "cable",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cable"
+  },
+  {
+   "fieldname": "contact_person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contact Person"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-12 21:28:14.849269",
+ "modified_by": "Administrator",
+ "module": "Logistic Management",
+ "name": "Agent",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
